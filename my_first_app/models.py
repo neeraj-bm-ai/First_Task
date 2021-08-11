@@ -5,6 +5,7 @@ class UsersMail(models.Model):
     email_id = models.EmailField(max_length=50, primary_key=True)
     email_sent_time = models.DateTimeField(auto_now_add=True, blank=True)
     email_status = models.CharField(max_length=10)
+    email_message = models.TextField(max_length=200)
 
     # def __str__(self):
     #     return str(self.id)
